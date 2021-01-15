@@ -7,13 +7,13 @@ http.createServer(function (req, res) {
 
     const url = req.url;
 
-    if(url === '/') {
+    if (url === '/') {
         res.write('Home Page'); //fs readfile index.html
         res.end();
     } else if(url === '/about') {
         res.write('About Page');
         res.end();
-    }else if(url === '/contact-me') {
+    } else if(url === '/contact-me') {
         res.write('Contact Page');
         res.end();
     } else {
